@@ -1,0 +1,39 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <body onload="displayHome();">
+                <ul style="list-style-type: none;">
+                    <li class="id"></li>
+                    <li class="sku"></li>
+                    <li class = "name"></li>
+                    <li class="price"></li>
+                    <li class="shipping"></li>
+                    <li class="type"></li>
+                    <li class="image"></li>
+                    <div id="edit">
+                        <a href="/update?id" class="btn border-shadow update">
+                            <span class="text-gradient"><i>EDIT</i></span>
+                        </a>
+                    </div>
+                    <button id="delete" onclick="delProd()">Delete</button>
+                </ul>      
+            </body>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+<div class="b_buttons">
+    <div class="buttons_group">
+        <button id="back" onclick="prev()" >Back</button>
+        <button id= "next" onclick="next()">Next</button>
+    </div>
+</div>
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

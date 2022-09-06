@@ -1,0 +1,51 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+         <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+           <!-- form -->
+            <!-- form handling -->
+            <form method="POST" id="update_prod">
+                <div class="new_prod">
+                    <div class="form-group">
+                        <label for="sku" class="text-light">Sku</label>
+                        <input type="hidden" name="id" value="<%=product._id%>">
+                        <input type="text" name="sku" value="<%=product.sku%>" placeholder="1111">
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="text" name="name" value="<%=product.name%>" placeholder="Duracell">
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="text-light">Price</label>
+                        <input type="text" name="price" value="<%=product.price%>" placeholder="7">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipping" class="text-light">Shipping</label>
+                        <input type="text" name="shipping" value="<%=product.shipping%>" placeholder="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="type" class="text-light">Type</label>
+                        <input type="text" name="type" value="<%=product.type%>" placeholder="Batteries">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="save">Save</button>
+                    </div>
+
+                </div>
+            </form>
+           <!-- /form -->
+        </div>
+    </main>
+<!-- /Main Site -->
+    
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
+
+
+
+

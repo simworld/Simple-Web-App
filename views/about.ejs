@@ -1,0 +1,48 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <h2>Info about the assignment</h2>
+            <p>This project is a web application to display, navigate through items, add, update and delete a product saved in a MongoDB.<br>
+               For the server side I used Node JS, while for the client side I used HTML/CSS, Javascript, AJAX and EJS.
+               The products.json file is inserted in a MongodDB using MongoDB Atlas. <br>
+               The project contanins four subfolders.
+            </p>
+            <br>
+            
+            <h4>Assets folder which contains:</h4>
+            <ul>
+                <li>css with the css file</li>
+                <li>js with the javascript file with my Ajax and my scripts</li>
+            </ul><br>
+
+            <h4>Server folder which contains:</h4>
+            <ul>
+               <li>controller folder that contains the functions to process the user requests from the server</li>
+               <li>database with the connection to the database and the json file</li>
+               <li>model contains the database schema and the function to insert the json file to the collection</li>
+               <li>routes contains the routes to the pages and to the APIs</li>
+               <li>services contains the callback functions of the router</li>
+            </ul><br>
+
+            <p>
+            Views folder contains the EJS files to render the HTML and CSS. The include subfolder, contains some .ejs files that are shared by 4 main pages (index, insert, update and about).<br> 
+            The node_modules folder contains all the nodejs modules used to run the application.<br><br>
+            The application does not have any search engine to search a specific product. 
+            When you lunch the application for the first time, if the database does not exist, it creates it and inserts the .json file in the collection. It can takes 2/3 minutes to complete the operation.
+            I did not do any pagination so I limit the find in the controller to 300 items, otherwise it can impacts the performance of the application. 
+            Rather than MongoDB Atlas, the web application can be modified to use a local MongoDB database. This can be better if the user does not have any internet access.
+            </p>               
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
