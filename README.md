@@ -11,11 +11,9 @@ cd distributed_system
 npm i 
 npm start
 ```
-The conf.env file contains the MongoDB URL. 
-To access the database hosted in my MongoDB Atlas, please use the URL in the .env file.
-The logins information for my database are:
-user: admin 
-pwd:admin
+Download the .json product file from https://github.com/BestBuyAPIs/open-data-set/blob/master/products.json and copy inside the database folder
+
+In the conf.env file please add your MongoDB URL. 
 
 To run the dev mode (to use nodemon):
 
